@@ -1,6 +1,6 @@
 package com.company;
 
-public abstract class Car implements Drivable{
+public abstract class Car implements Drivable, Sellable{
     final String producer;
     final String model;
     final Integer yearOfProduction;
@@ -26,6 +26,9 @@ public abstract class Car implements Drivable{
         //here should be some more code
         return 0.0;
     }
+
+    public void sell(Human buyer) throws Exception {}
+
 
     public String toString(){
         return "Producer: " + this.producer +" model: "+ this.model;

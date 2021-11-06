@@ -1,11 +1,12 @@
 package com.company;
 
 public class Truck extends Car {
+    public Human owner;
     Double capacityInTones;
     Double actualCargoWeight;
     Double drivingTimeInHours;
 
-    public Truck(String producer, String model, Integer yearOfProduction) {
+    public Truck(String producer,String model, Integer yearOfProduction) {
         super(producer, model, yearOfProduction);
         this.capacityInTones = 24.0;
         this.actualCargoWeight = 0.0;
@@ -49,4 +50,18 @@ public class Truck extends Car {
     }
 
 
+    @Override
+    public Double getPrice() {
+        return null;
+    }
+
+    @Override
+    public Human getOwner() {
+        return null;
+    }
+
+    @Override
+    public void sell(Human buyer) throws Exception {
+
+    }
 }
